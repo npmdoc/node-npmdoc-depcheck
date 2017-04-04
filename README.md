@@ -3,7 +3,7 @@
 
 [![NPM](https://nodei.co/npm/depcheck.png?downloads=true)](https://www.npmjs.com/package/depcheck)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-depcheck/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-depcheck_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-depcheck/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-depcheck/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-depcheck_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-depcheck/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-depcheck/build/screenCapture.npmPackageListing.svg)
 
