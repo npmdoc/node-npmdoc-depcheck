@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/depcheck/depcheck#readme"
-
-    >depcheck (v0.6.7)</a>
+    <a href="https://github.com/depcheck/depcheck#readme">depcheck (v0.6.7)</a>
 </h1>
 <h4>Check dependencies in your node module</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.depcheck">module depcheck</a><ol>
 
@@ -669,19 +662,19 @@
     return _lodash2.default.isUndefined(options[key]) ? _constants.defaultOptions[key] : options[key];
   };
 
-  var withoutDev = getOption(&#x27;withoutDev&#x27;);
-  var ignoreBinPackage = getOption(&#x27;ignoreBinPackage&#x27;);
-  var ignoreMatches = getOption(&#x27;ignoreMatches&#x27;);
+  var withoutDev = getOption('withoutDev');
+  var ignoreBinPackage = getOption('ignoreBinPackage');
+  var ignoreMatches = getOption('ignoreMatches');
   var ignoreDirs = _lodash2.default.union(_constants.defaultOptions.ignoreDirs, options.ignoreDirs);
 
-  var detectors = getOption(&#x27;detectors&#x27;);
-  var parsers = (0, _lodash2.default)(getOption(&#x27;parsers&#x27;)).mapValues(function (value) {
+  var detectors = getOption('detectors');
+  var parsers = (0, _lodash2.default)(getOption('parsers')).mapValues(function (value) {
     return _lodash2.default.isArray(value) ? value : [value];
-  }).merge({ &#x27;*&#x27;: getOption(&#x27;specials&#x27;) }).value();
+  }).merge({ '*': getOption('specials') }).value();
 
-  var metadata = options.package || (0, _utils.readJSON)(_path2.default.join(rootDir, &#x27;package.json&#x27;));
+  var metadata = options.package || (0, _utils.readJSON)(_path2.default.join(rootDir, 'package.json'));
   var dependencies = metadata.dependencies || {};
-  var devDependencies = !withoutDev &#x26;&#x26; metadata.devDependencies ? metadata.devDependencies : {};
+  var devDependencies = !withoutDev &amp;&amp; metadata.devDependencies ? metadata.devDependencies : {};
   var peerDeps = Object.keys(metadata.peerDependencies || {});
   var optionalDeps = Object.keys(metadata.optionalDependencies || {});
   var deps = filterDependencies(rootDir, ignoreBinPackage, ignoreMatches, dependencies);
@@ -716,7 +709,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function detectGruntLoadTaskCallExpression(node) {
-  return node.type === &#x27;CallExpression&#x27; &#x26;&#x26; node.callee &#x26;&#x26; node.callee.property &#x26;&#x26; node.callee.property.name === &#x27;loadNpmTasks&#x27; &#x26;&#x26;
+  return node.type === 'CallExpression' &amp;&amp; node.callee &amp;&amp; node.callee.property &amp;&amp; node.callee.property.name === 'loadNpmTasks' &amp;&amp;
 node.arguments[0] ? [node.arguments[0].value] : [];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -732,7 +725,7 @@ node.arguments[0] ? [node.arguments[0].value] : [];
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function detectImportDeclaration(node) {
-  return node.type === &#x27;ImportDeclaration&#x27; &#x26;&#x26; node.source &#x26;&#x26; node.source.value ? [node.source.value] : [];
+  return node.type === 'ImportDeclaration' &amp;&amp; node.source &amp;&amp; node.source.value ? [node.source.value] : [];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -747,8 +740,8 @@ node.arguments[0] ? [node.arguments[0].value] : [];
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function detectRequireCallExpression(node) {
-  return node.type === &#x27;CallExpression&#x27; &#x26;&#x26; node.callee &#x26;&#x26; node.callee.type === &#x27;Identifier&#x27; &#x26;&#x26; node.callee.name === &#x27;require&#x27; &#x26;&#x26;
-node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value) ? [node.arguments[0].value] : [];
+  return node.type === 'CallExpression' &amp;&amp; node.callee &amp;&amp; node.callee.type === 'Identifier' &amp;&amp; node.callee.name === 'require' &amp;&amp;
+node.arguments[0] &amp;&amp; _lodash2.default.isString(node.arguments[0].value) ? [node.arguments[0].value] : [];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -779,7 +772,7 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseES6(content) {
   return (0, _babylon.parse)(content, {
-    sourceType: &#x27;module&#x27;
+    sourceType: 'module'
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -796,11 +789,11 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseES7(content) {
   return (0, _babylon.parse)(content, {
-    sourceType: &#x27;module&#x27;,
+    sourceType: 'module',
 
     // Enable all possible babylon plugins.
     // Because we only parse them, not evaluate any code, it is safe to do so.
-    plugins: [&#x27;*&#x27;]
+    plugins: ['*']
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -817,11 +810,11 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseJSX(content) {
   return (0, _babylon.parse)(content, {
-    sourceType: &#x27;module&#x27;,
+    sourceType: 'module',
 
     // Enable all possible babylon plugins.
     // Because the guys using React always want the newest syntax.
-    plugins: [&#x27;*&#x27;, &#x27;jsx&#x27;]
+    plugins: ['*', 'jsx']
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -846,13 +839,13 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
   var result = (0, _lodash2.default)(stats.includedFiles).map(function (file) {
     return _path2.default.relative(rootDir, file);
   }).filter(function (file) {
-    return file.indexOf(&#x27;node_modules&#x27;) === 0;
+    return file.indexOf('node_modules') === 0;
   }) // refer to node_modules
   .map(function (file) {
-    return file.replace(/\\/g, &#x27;/&#x27;);
+    return file.replace(/\\/g, '/');
   }) // normalize paths in Windows
   .map(function (file) {
-    return file.substring(&#x27;node_modules/&#x27;.length);
+    return file.substring('node_modules/'.length);
   }) // avoid heading slash
   .map(_requirePackageName2.default).uniq().value();
 
@@ -885,7 +878,7 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
   // TODO avoid parse source file twice, use Typescript native traverser to find out dependencies.
   // Reference: https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API#traversing-the-ast-with-a-little-linter
   return (0, _babylon.parse)(result, {
-    sourceType: &#x27;module&#x27;
+    sourceType: 'module'
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -903,12 +896,12 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <li>description and source-code<pre class="apidocCodePre">function parseBabel(content, filePath, deps) {
   var filename = _path2.default.basename(filePath);
 
-  if (filename === &#x27;.babelrc&#x27;) {
+  if (filename === '.babelrc') {
     var options = parse(content);
     return checkOptions(deps, options);
   }
 
-  if (filename === &#x27;package.json&#x27;) {
+  if (filename === 'package.json') {
     var metadata = parse(content);
     return checkOptions(deps, metadata.babel);
   }
@@ -946,27 +939,27 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseCommitizen(content, filePath, deps, rootDir) {
-  var packageJsonPath = _path2.default.resolve(rootDir, &#x27;package.json&#x27;);
+  var packageJsonPath = _path2.default.resolve(rootDir, 'package.json');
   var resolvedFilePath = _path2.default.resolve(filePath);
 
   if (resolvedFilePath === packageJsonPath) {
     var metadata = JSON.parse(content);
 
-    if (metadata.config &#x26;&#x26; metadata.config.commitizen &#x26;&#x26; metadata.config.commitizen.path) {
+    if (metadata.config &amp;&amp; metadata.config.commitizen &amp;&amp; metadata.config.commitizen.path) {
       var commitizenPath = metadata.config.commitizen.path;
 
-      if (!commitizenPath.startsWith(&#x27;.&#x27;)) {
+      if (!commitizenPath.startsWith('.')) {
         return [(0, _requirePackageName2.default)(commitizenPath)];
       }
 
-      var normalizedPath = _path2.default.normalize(commitizenPath).replace(/\\/g, &#x27;/&#x27;);
+      var normalizedPath = _path2.default.normalize(commitizenPath).replace(/\\/g, '/');
 
-      if (!normalizedPath.startsWith(&#x27;node_modules&#x27;)) {
+      if (!normalizedPath.startsWith('node_modules')) {
         // The path is not refering to a file in another module
         return [];
       }
 
-      var packagePath = normalizedPath.substring(&#x27;node_modules/&#x27;.length);
+      var packagePath = normalizedPath.substring('node_modules/'.length);
 
       return [(0, _requirePackageName2.default)(packagePath)];
     }
@@ -1008,9 +1001,9 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseFerossStandard(content, filePath, deps, rootDir) {
-  var packageJsonPath = _path2.default.resolve(rootDir, &#x27;package.json&#x27;);
+  var packageJsonPath = _path2.default.resolve(rootDir, 'package.json');
   var resolvedFilePath = _path2.default.resolve(filePath);
-  if (resolvedFilePath === packageJsonPath &#x26;&#x26; deps.indexOf(&#x27;standard&#x27;) !== -1) {
+  if (resolvedFilePath === packageJsonPath &amp;&amp; deps.indexOf('standard') !== -1) {
     var metadata = JSON.parse(content);
     var config = metadata.standard || {};
     var parser = config.parser;
@@ -1033,8 +1026,8 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseGulpPlugins(content, filePath, deps, rootDir) {
   var resolvedPath = (0, _path.resolve)(filePath);
-  if (resolvedPath !== (0, _path.resolve)(rootDir, &#x27;gulpfile.js&#x27;) &#x26;&#x26; resolvedPath !== (0, _path.resolve)(rootDir, &#x27;gulpfile.babel
-.js&#x27;)) {
+  if (resolvedPath !== (0, _path.resolve)(rootDir, 'gulpfile.js') &amp;&amp; resolvedPath !== (0, _path.resolve)(rootDir, 'gulpfile.babel
+.js')) {
     return [];
   }
 
@@ -1062,22 +1055,22 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseMocha(content, filepath, deps, rootDir) {
-  var defaultOptPath = _path2.default.resolve(rootDir, &#x27;test/mocha.opts&#x27;);
+  var defaultOptPath = _path2.default.resolve(rootDir, 'test/mocha.opts');
   if (filepath === defaultOptPath) {
     return getRequires(content, deps);
   }
 
   // get mocha.opts from scripts
   var requires = (0, _lodash2.default)((0, _utils.getScripts)(filepath, content)).filter(function (script) {
-    return script.indexOf(&#x27;mocha&#x27;) !== -1;
+    return script.indexOf('mocha') !== -1;
   }).map(function (script) {
     return getOpts(script);
   }).filter(function (opts) {
     return opts;
   }).map(function (opts) {
-    return _path2.default.resolve(filepath, &#x27;..&#x27;, opts);
+    return _path2.default.resolve(filepath, '..', opts);
   }).map(function (optPath) {
-    return _fs2.default.readFileSync(optPath, &#x27;utf-8&#x27;);
+    return _fs2.default.readFileSync(optPath, 'utf-8');
   }) // TODO async read file
   .map(function (optContent) {
     return getRequires(optContent, deps);
@@ -1148,7 +1141,7 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function detectGruntLoadTaskCallExpression(node) {
-  return node.type === &#x27;CallExpression&#x27; &#x26;&#x26; node.callee &#x26;&#x26; node.callee.property &#x26;&#x26; node.callee.property.name === &#x27;loadNpmTasks&#x27; &#x26;&#x26;
+  return node.type === 'CallExpression' &amp;&amp; node.callee &amp;&amp; node.callee.property &amp;&amp; node.callee.property.name === 'loadNpmTasks' &amp;&amp;
 node.arguments[0] ? [node.arguments[0].value] : [];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1164,7 +1157,7 @@ node.arguments[0] ? [node.arguments[0].value] : [];
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function detectImportDeclaration(node) {
-  return node.type === &#x27;ImportDeclaration&#x27; &#x26;&#x26; node.source &#x26;&#x26; node.source.value ? [node.source.value] : [];
+  return node.type === 'ImportDeclaration' &amp;&amp; node.source &amp;&amp; node.source.value ? [node.source.value] : [];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -1179,8 +1172,8 @@ node.arguments[0] ? [node.arguments[0].value] : [];
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function detectRequireCallExpression(node) {
-  return node.type === &#x27;CallExpression&#x27; &#x26;&#x26; node.callee &#x26;&#x26; node.callee.type === &#x27;Identifier&#x27; &#x26;&#x26; node.callee.name === &#x27;require&#x27; &#x26;&#x26;
-node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value) ? [node.arguments[0].value] : [];
+  return node.type === 'CallExpression' &amp;&amp; node.callee &amp;&amp; node.callee.type === 'Identifier' &amp;&amp; node.callee.name === 'require' &amp;&amp;
+node.arguments[0] &amp;&amp; _lodash2.default.isString(node.arguments[0].value) ? [node.arguments[0].value] : [];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -1200,7 +1193,7 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function detectGruntLoadTaskCallExpression(node) {
-  return node.type === &#x27;CallExpression&#x27; &#x26;&#x26; node.callee &#x26;&#x26; node.callee.property &#x26;&#x26; node.callee.property.name === &#x27;loadNpmTasks&#x27; &#x26;&#x26;
+  return node.type === 'CallExpression' &amp;&amp; node.callee &amp;&amp; node.callee.property &amp;&amp; node.callee.property.name === 'loadNpmTasks' &amp;&amp;
 node.arguments[0] ? [node.arguments[0].value] : [];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1221,7 +1214,7 @@ node.arguments[0] ? [node.arguments[0].value] : [];
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function detectImportDeclaration(node) {
-  return node.type === &#x27;ImportDeclaration&#x27; &#x26;&#x26; node.source &#x26;&#x26; node.source.value ? [node.source.value] : [];
+  return node.type === 'ImportDeclaration' &amp;&amp; node.source &amp;&amp; node.source.value ? [node.source.value] : [];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -1241,8 +1234,8 @@ node.arguments[0] ? [node.arguments[0].value] : [];
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function detectRequireCallExpression(node) {
-  return node.type === &#x27;CallExpression&#x27; &#x26;&#x26; node.callee &#x26;&#x26; node.callee.type === &#x27;Identifier&#x27; &#x26;&#x26; node.callee.name === &#x27;require&#x27; &#x26;&#x26;
-node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value) ? [node.arguments[0].value] : [];
+  return node.type === 'CallExpression' &amp;&amp; node.callee &amp;&amp; node.callee.type === 'Identifier' &amp;&amp; node.callee.name === 'require' &amp;&amp;
+node.arguments[0] &amp;&amp; _lodash2.default.isString(node.arguments[0].value) ? [node.arguments[0].value] : [];
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -1278,7 +1271,7 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseES6(content) {
   return (0, _babylon.parse)(content, {
-    sourceType: &#x27;module&#x27;
+    sourceType: 'module'
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1295,11 +1288,11 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseES7(content) {
   return (0, _babylon.parse)(content, {
-    sourceType: &#x27;module&#x27;,
+    sourceType: 'module',
 
     // Enable all possible babylon plugins.
     // Because we only parse them, not evaluate any code, it is safe to do so.
-    plugins: [&#x27;*&#x27;]
+    plugins: ['*']
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1316,11 +1309,11 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseJSX(content) {
   return (0, _babylon.parse)(content, {
-    sourceType: &#x27;module&#x27;,
+    sourceType: 'module',
 
     // Enable all possible babylon plugins.
     // Because the guys using React always want the newest syntax.
-    plugins: [&#x27;*&#x27;, &#x27;jsx&#x27;]
+    plugins: ['*', 'jsx']
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1345,13 +1338,13 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
   var result = (0, _lodash2.default)(stats.includedFiles).map(function (file) {
     return _path2.default.relative(rootDir, file);
   }).filter(function (file) {
-    return file.indexOf(&#x27;node_modules&#x27;) === 0;
+    return file.indexOf('node_modules') === 0;
   }) // refer to node_modules
   .map(function (file) {
-    return file.replace(/\\/g, &#x27;/&#x27;);
+    return file.replace(/\\/g, '/');
   }) // normalize paths in Windows
   .map(function (file) {
-    return file.substring(&#x27;node_modules/&#x27;.length);
+    return file.substring('node_modules/'.length);
   }) // avoid heading slash
   .map(_requirePackageName2.default).uniq().value();
 
@@ -1384,7 +1377,7 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
   // TODO avoid parse source file twice, use Typescript native traverser to find out dependencies.
   // Reference: https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API#traversing-the-ast-with-a-little-linter
   return (0, _babylon.parse)(result, {
-    sourceType: &#x27;module&#x27;
+    sourceType: 'module'
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1426,7 +1419,7 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseES6(content) {
   return (0, _babylon.parse)(content, {
-    sourceType: &#x27;module&#x27;
+    sourceType: 'module'
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1448,11 +1441,11 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseES7(content) {
   return (0, _babylon.parse)(content, {
-    sourceType: &#x27;module&#x27;,
+    sourceType: 'module',
 
     // Enable all possible babylon plugins.
     // Because we only parse them, not evaluate any code, it is safe to do so.
-    plugins: [&#x27;*&#x27;]
+    plugins: ['*']
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1474,11 +1467,11 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseJSX(content) {
   return (0, _babylon.parse)(content, {
-    sourceType: &#x27;module&#x27;,
+    sourceType: 'module',
 
     // Enable all possible babylon plugins.
     // Because the guys using React always want the newest syntax.
-    plugins: [&#x27;*&#x27;, &#x27;jsx&#x27;]
+    plugins: ['*', 'jsx']
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1508,13 +1501,13 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
   var result = (0, _lodash2.default)(stats.includedFiles).map(function (file) {
     return _path2.default.relative(rootDir, file);
   }).filter(function (file) {
-    return file.indexOf(&#x27;node_modules&#x27;) === 0;
+    return file.indexOf('node_modules') === 0;
   }) // refer to node_modules
   .map(function (file) {
-    return file.replace(/\\/g, &#x27;/&#x27;);
+    return file.replace(/\\/g, '/');
   }) // normalize paths in Windows
   .map(function (file) {
-    return file.substring(&#x27;node_modules/&#x27;.length);
+    return file.substring('node_modules/'.length);
   }) // avoid heading slash
   .map(_requirePackageName2.default).uniq().value();
 
@@ -1552,7 +1545,7 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
   // TODO avoid parse source file twice, use Typescript native traverser to find out dependencies.
   // Reference: https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API#traversing-the-ast-with-a-little-linter
   return (0, _babylon.parse)(result, {
-    sourceType: &#x27;module&#x27;
+    sourceType: 'module'
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1575,12 +1568,12 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <li>description and source-code<pre class="apidocCodePre">function parseBabel(content, filePath, deps) {
   var filename = _path2.default.basename(filePath);
 
-  if (filename === &#x27;.babelrc&#x27;) {
+  if (filename === '.babelrc') {
     var options = parse(content);
     return checkOptions(deps, options);
   }
 
-  if (filename === &#x27;package.json&#x27;) {
+  if (filename === 'package.json') {
     var metadata = parse(content);
     return checkOptions(deps, metadata.babel);
   }
@@ -1618,27 +1611,27 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseCommitizen(content, filePath, deps, rootDir) {
-  var packageJsonPath = _path2.default.resolve(rootDir, &#x27;package.json&#x27;);
+  var packageJsonPath = _path2.default.resolve(rootDir, 'package.json');
   var resolvedFilePath = _path2.default.resolve(filePath);
 
   if (resolvedFilePath === packageJsonPath) {
     var metadata = JSON.parse(content);
 
-    if (metadata.config &#x26;&#x26; metadata.config.commitizen &#x26;&#x26; metadata.config.commitizen.path) {
+    if (metadata.config &amp;&amp; metadata.config.commitizen &amp;&amp; metadata.config.commitizen.path) {
       var commitizenPath = metadata.config.commitizen.path;
 
-      if (!commitizenPath.startsWith(&#x27;.&#x27;)) {
+      if (!commitizenPath.startsWith('.')) {
         return [(0, _requirePackageName2.default)(commitizenPath)];
       }
 
-      var normalizedPath = _path2.default.normalize(commitizenPath).replace(/\\/g, &#x27;/&#x27;);
+      var normalizedPath = _path2.default.normalize(commitizenPath).replace(/\\/g, '/');
 
-      if (!normalizedPath.startsWith(&#x27;node_modules&#x27;)) {
+      if (!normalizedPath.startsWith('node_modules')) {
         // The path is not refering to a file in another module
         return [];
       }
 
-      var packagePath = normalizedPath.substring(&#x27;node_modules/&#x27;.length);
+      var packagePath = normalizedPath.substring('node_modules/'.length);
 
       return [(0, _requirePackageName2.default)(packagePath)];
     }
@@ -1680,9 +1673,9 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseFerossStandard(content, filePath, deps, rootDir) {
-  var packageJsonPath = _path2.default.resolve(rootDir, &#x27;package.json&#x27;);
+  var packageJsonPath = _path2.default.resolve(rootDir, 'package.json');
   var resolvedFilePath = _path2.default.resolve(filePath);
-  if (resolvedFilePath === packageJsonPath &#x26;&#x26; deps.indexOf(&#x27;standard&#x27;) !== -1) {
+  if (resolvedFilePath === packageJsonPath &amp;&amp; deps.indexOf('standard') !== -1) {
     var metadata = JSON.parse(content);
     var config = metadata.standard || {};
     var parser = config.parser;
@@ -1705,8 +1698,8 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseGulpPlugins(content, filePath, deps, rootDir) {
   var resolvedPath = (0, _path.resolve)(filePath);
-  if (resolvedPath !== (0, _path.resolve)(rootDir, &#x27;gulpfile.js&#x27;) &#x26;&#x26; resolvedPath !== (0, _path.resolve)(rootDir, &#x27;gulpfile.babel
-.js&#x27;)) {
+  if (resolvedPath !== (0, _path.resolve)(rootDir, 'gulpfile.js') &amp;&amp; resolvedPath !== (0, _path.resolve)(rootDir, 'gulpfile.babel
+.js')) {
     return [];
   }
 
@@ -1734,22 +1727,22 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseMocha(content, filepath, deps, rootDir) {
-  var defaultOptPath = _path2.default.resolve(rootDir, &#x27;test/mocha.opts&#x27;);
+  var defaultOptPath = _path2.default.resolve(rootDir, 'test/mocha.opts');
   if (filepath === defaultOptPath) {
     return getRequires(content, deps);
   }
 
   // get mocha.opts from scripts
   var requires = (0, _lodash2.default)((0, _utils.getScripts)(filepath, content)).filter(function (script) {
-    return script.indexOf(&#x27;mocha&#x27;) !== -1;
+    return script.indexOf('mocha') !== -1;
   }).map(function (script) {
     return getOpts(script);
   }).filter(function (opts) {
     return opts;
   }).map(function (opts) {
-    return _path2.default.resolve(filepath, &#x27;..&#x27;, opts);
+    return _path2.default.resolve(filepath, '..', opts);
   }).map(function (optPath) {
-    return _fs2.default.readFileSync(optPath, &#x27;utf-8&#x27;);
+    return _fs2.default.readFileSync(optPath, 'utf-8');
   }) // TODO async read file
   .map(function (optContent) {
     return getRequires(optContent, deps);
@@ -1801,12 +1794,12 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <li>description and source-code<pre class="apidocCodePre">function parseBabel(content, filePath, deps) {
   var filename = _path2.default.basename(filePath);
 
-  if (filename === &#x27;.babelrc&#x27;) {
+  if (filename === '.babelrc') {
     var options = parse(content);
     return checkOptions(deps, options);
   }
 
-  if (filename === &#x27;package.json&#x27;) {
+  if (filename === 'package.json') {
     var metadata = parse(content);
     return checkOptions(deps, metadata.babel);
   }
@@ -1854,27 +1847,27 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseCommitizen(content, filePath, deps, rootDir) {
-  var packageJsonPath = _path2.default.resolve(rootDir, &#x27;package.json&#x27;);
+  var packageJsonPath = _path2.default.resolve(rootDir, 'package.json');
   var resolvedFilePath = _path2.default.resolve(filePath);
 
   if (resolvedFilePath === packageJsonPath) {
     var metadata = JSON.parse(content);
 
-    if (metadata.config &#x26;&#x26; metadata.config.commitizen &#x26;&#x26; metadata.config.commitizen.path) {
+    if (metadata.config &amp;&amp; metadata.config.commitizen &amp;&amp; metadata.config.commitizen.path) {
       var commitizenPath = metadata.config.commitizen.path;
 
-      if (!commitizenPath.startsWith(&#x27;.&#x27;)) {
+      if (!commitizenPath.startsWith('.')) {
         return [(0, _requirePackageName2.default)(commitizenPath)];
       }
 
-      var normalizedPath = _path2.default.normalize(commitizenPath).replace(/\\/g, &#x27;/&#x27;);
+      var normalizedPath = _path2.default.normalize(commitizenPath).replace(/\\/g, '/');
 
-      if (!normalizedPath.startsWith(&#x27;node_modules&#x27;)) {
+      if (!normalizedPath.startsWith('node_modules')) {
         // The path is not refering to a file in another module
         return [];
       }
 
-      var packagePath = normalizedPath.substring(&#x27;node_modules/&#x27;.length);
+      var packagePath = normalizedPath.substring('node_modules/'.length);
 
       return [(0, _requirePackageName2.default)(packagePath)];
     }
@@ -1926,9 +1919,9 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseFerossStandard(content, filePath, deps, rootDir) {
-  var packageJsonPath = _path2.default.resolve(rootDir, &#x27;package.json&#x27;);
+  var packageJsonPath = _path2.default.resolve(rootDir, 'package.json');
   var resolvedFilePath = _path2.default.resolve(filePath);
-  if (resolvedFilePath === packageJsonPath &#x26;&#x26; deps.indexOf(&#x27;standard&#x27;) !== -1) {
+  if (resolvedFilePath === packageJsonPath &amp;&amp; deps.indexOf('standard') !== -1) {
     var metadata = JSON.parse(content);
     var config = metadata.standard || {};
     var parser = config.parser;
@@ -1956,8 +1949,8 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseGulpPlugins(content, filePath, deps, rootDir) {
   var resolvedPath = (0, _path.resolve)(filePath);
-  if (resolvedPath !== (0, _path.resolve)(rootDir, &#x27;gulpfile.js&#x27;) &#x26;&#x26; resolvedPath !== (0, _path.resolve)(rootDir, &#x27;gulpfile.babel
-.js&#x27;)) {
+  if (resolvedPath !== (0, _path.resolve)(rootDir, 'gulpfile.js') &amp;&amp; resolvedPath !== (0, _path.resolve)(rootDir, 'gulpfile.babel
+.js')) {
     return [];
   }
 
@@ -1990,22 +1983,22 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parseMocha(content, filepath, deps, rootDir) {
-  var defaultOptPath = _path2.default.resolve(rootDir, &#x27;test/mocha.opts&#x27;);
+  var defaultOptPath = _path2.default.resolve(rootDir, 'test/mocha.opts');
   if (filepath === defaultOptPath) {
     return getRequires(content, deps);
   }
 
   // get mocha.opts from scripts
   var requires = (0, _lodash2.default)((0, _utils.getScripts)(filepath, content)).filter(function (script) {
-    return script.indexOf(&#x27;mocha&#x27;) !== -1;
+    return script.indexOf('mocha') !== -1;
   }).map(function (script) {
     return getOpts(script);
   }).filter(function (opts) {
     return opts;
   }).map(function (opts) {
-    return _path2.default.resolve(filepath, &#x27;..&#x27;, opts);
+    return _path2.default.resolve(filepath, '..', opts);
   }).map(function (optPath) {
-    return _fs2.default.readFileSync(optPath, &#x27;utf-8&#x27;);
+    return _fs2.default.readFileSync(optPath, 'utf-8');
   }) // TODO async read file
   .map(function (optContent) {
     return getRequires(optContent, deps);
@@ -2072,3 +2065,4 @@ node.arguments[0] &#x26;&#x26; _lodash2.default.isString(node.arguments[0].value
     ]
 </div>
 </div>
+</body></html>

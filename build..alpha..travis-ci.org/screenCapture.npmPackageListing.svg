@@ -1,56 +1,56 @@
 <svg height="846" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="846" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-04 07:48:03 +0000   195706 byte  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-04 07:48:03 +0000     2738 byte  CONTRIBUTING.md</tspan>
-<tspan x="10" y="58">  2.  2017-04-04 07:48:03 +0000     1086 byte  LICENSE</tspan>
-<tspan x="10" y="74">  3.  2017-04-04 07:48:03 +0000     8508 byte  README.md</tspan>
-<tspan x="10" y="90">  4.  2017-04-04 07:48:03 +0000      387 byte  appveyor.yml</tspan>
-<tspan x="10" y="106">  5.  2017-04-04 07:48:03 +0000      218 byte  bin/depcheck</tspan>
-<tspan x="10" y="122">  6.  2017-04-04 07:48:03 +0000      143 byte  dependent-build.yml</tspan>
-<tspan x="10" y="138">  7.  2017-04-04 07:48:03 +0000     1065 byte  dependent-build/depcheck-test-e2e/LICENSE</tspan>
-<tspan x="10" y="154">  8.  2017-04-04 07:48:03 +0000      675 byte  dependent-build/depcheck-test-e2e/README.md</tspan>
-<tspan x="10" y="170">  9.  2017-04-04 07:48:03 +0000      308 byte  dependent-build/depcheck-test-e2e/appveyor.yml</tspan>
-<tspan x="10" y="186"> 10.  2017-04-04 07:48:03 +0000     1214 byte  dependent-build/depcheck-test-e2e/e2e.js</tspan>
-<tspan x="10" y="202"> 11.  2017-04-04 07:48:03 +0000       71 byte  dependent-build/depcheck-test-e2e/fake_modules/go\</tspan>
-<tspan x="10" y="218">od/index.js</tspan>
-<tspan x="10" y="234"> 12.  2017-04-04 07:48:03 +0000       48 byte  dependent-build/depcheck-test-e2e/fake_modules/go\</tspan>
-<tspan x="10" y="250">od/package.json</tspan>
-<tspan x="10" y="266"> 13.  2017-04-04 07:48:03 +0000      171 byte  dependent-build/depcheck-test-e2e/fake_modules/mi\</tspan>
-<tspan x="10" y="282">ssing/index.js</tspan>
-<tspan x="10" y="298"> 14.  2017-04-04 07:48:03 +0000       28 byte  dependent-build/depcheck-test-e2e/fake_modules/mi\</tspan>
-<tspan x="10" y="314">ssing/package.json</tspan>
-<tspan x="10" y="330"> 15.  2017-04-04 07:48:03 +0000       71 byte  dependent-build/depcheck-test-e2e/fake_modules/un\</tspan>
-<tspan x="10" y="346">used/index.js</tspan>
-<tspan x="10" y="362"> 16.  2017-04-04 07:48:03 +0000       54 byte  dependent-build/depcheck-test-e2e/fake_modules/un\</tspan>
-<tspan x="10" y="378">used/package.json</tspan>
-<tspan x="10" y="394"> 17.  2017-04-04 07:48:03 +0000      455 byte  dependent-build/depcheck-test-e2e/package.json</tspan>
-<tspan x="10" y="410"> 18.  2017-04-04 07:48:03 +0000   121744 byte  dependent-build/depcheck-test-e2e/yarn.lock</tspan>
-<tspan x="10" y="426"> 19.  2017-04-04 07:48:03 +0000     9982 byte  dist/check.js</tspan>
-<tspan x="10" y="442"> 20.  2017-04-04 07:48:03 +0000     4813 byte  dist/cli.js</tspan>
-<tspan x="10" y="458"> 21.  2017-04-04 07:48:03 +0000      358 byte  dist/component.json</tspan>
-<tspan x="10" y="474"> 22.  2017-04-04 07:48:03 +0000     1861 byte  dist/constants.js</tspan>
-<tspan x="10" y="490"> 23.  2017-04-04 07:48:03 +0000      404 byte  dist/detector/gruntLoadTaskCallExpression.js</tspan>
-<tspan x="10" y="506"> 24.  2017-04-04 07:48:03 +0000      309 byte  dist/detector/importDeclaration.js</tspan>
-<tspan x="10" y="522"> 25.  2017-04-04 07:48:03 +0000      626 byte  dist/detector/requireCallExpression.js</tspan>
-<tspan x="10" y="538"> 26.  2017-04-04 07:48:03 +0000     3462 byte  dist/index.js</tspan>
-<tspan x="10" y="554"> 27.  2017-04-04 07:48:03 +0000      481 byte  dist/parser/coffee.js</tspan>
-<tspan x="10" y="570"> 28.  2017-04-04 07:48:03 +0000      283 byte  dist/parser/es6.js</tspan>
-<tspan x="10" y="586"> 29.  2017-04-04 07:48:03 +0000      427 byte  dist/parser/es7.js</tspan>
-<tspan x="10" y="602"> 30.  2017-04-04 07:48:03 +0000      422 byte  dist/parser/jsx.js</tspan>
-<tspan x="10" y="618"> 31.  2017-04-04 07:48:03 +0000     1345 byte  dist/parser/sass.js</tspan>
-<tspan x="10" y="634"> 32.  2017-04-04 07:48:03 +0000      852 byte  dist/parser/typescript.js</tspan>
-<tspan x="10" y="650"> 33.  2017-04-04 07:48:03 +0000     3365 byte  dist/special/babel.js</tspan>
-<tspan x="10" y="666"> 34.  2017-04-04 07:48:03 +0000     2576 byte  dist/special/bin.js</tspan>
-<tspan x="10" y="682"> 35.  2017-04-04 07:48:03 +0000     1415 byte  dist/special/commitizen.js</tspan>
-<tspan x="10" y="698"> 36.  2017-04-04 07:48:03 +0000     3876 byte  dist/special/eslint.js</tspan>
-<tspan x="10" y="714"> 37.  2017-04-04 07:48:03 +0000      775 byte  dist/special/feross-standard.js</tspan>
-<tspan x="10" y="730"> 38.  2017-04-04 07:48:03 +0000     6721 byte  dist/special/gulp-load-plugins.js</tspan>
-<tspan x="10" y="746"> 39.  2017-04-04 07:48:03 +0000     2047 byte  dist/special/mocha.js</tspan>
-<tspan x="10" y="762"> 40.  2017-04-04 07:48:03 +0000     1853 byte  dist/special/webpack.js</tspan>
-<tspan x="10" y="778"> 41.  2017-04-04 07:48:03 +0000     2155 byte  dist/utils/get-scripts.js</tspan>
-<tspan x="10" y="794"> 42.  2017-04-04 07:48:03 +0000     1019 byte  dist/utils/index.js</tspan>
-<tspan x="10" y="810"> 43.  2017-04-04 07:48:03 +0000      541 byte  false-alert.js</tspan>
-<tspan x="10" y="826"> 44.  2017-04-04 07:48:03 +0000     4754 byte  package.json</tspan>
+<tspan x="10" y="26">  0.  2017-04-18 03:48:41 +0000   195706 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-18 03:48:41 +0000     2738 bytes  CONTRIBUTING.md</tspan>
+<tspan x="10" y="58">  2.  2017-04-18 03:48:41 +0000     1086 bytes  LICENSE</tspan>
+<tspan x="10" y="74">  3.  2017-04-18 03:48:41 +0000     8508 bytes  README.md</tspan>
+<tspan x="10" y="90">  4.  2017-04-18 03:48:41 +0000      387 bytes  appveyor.yml</tspan>
+<tspan x="10" y="106">  5.  2017-04-18 03:48:41 +0000      218 bytes  bin/depcheck</tspan>
+<tspan x="10" y="122">  6.  2017-04-18 03:48:41 +0000      143 bytes  dependent-build.yml</tspan>
+<tspan x="10" y="138">  7.  2017-04-18 03:48:41 +0000     1065 bytes  dependent-build/depcheck-test-e2e/LICENSE</tspan>
+<tspan x="10" y="154">  8.  2017-04-18 03:48:41 +0000      675 bytes  dependent-build/depcheck-test-e2e/README.md</tspan>
+<tspan x="10" y="170">  9.  2017-04-18 03:48:41 +0000      308 bytes  dependent-build/depcheck-test-e2e/appveyor.yml</tspan>
+<tspan x="10" y="186"> 10.  2017-04-18 03:48:41 +0000     1214 bytes  dependent-build/depcheck-test-e2e/e2e.js</tspan>
+<tspan x="10" y="202"> 11.  2017-04-18 03:48:41 +0000       71 bytes  dependent-build/depcheck-test-e2e/fake_modules/g\</tspan>
+<tspan x="10" y="218">ood/index.js</tspan>
+<tspan x="10" y="234"> 12.  2017-04-18 03:48:41 +0000       48 bytes  dependent-build/depcheck-test-e2e/fake_modules/g\</tspan>
+<tspan x="10" y="250">ood/package.json</tspan>
+<tspan x="10" y="266"> 13.  2017-04-18 03:48:41 +0000      171 bytes  dependent-build/depcheck-test-e2e/fake_modules/m\</tspan>
+<tspan x="10" y="282">issing/index.js</tspan>
+<tspan x="10" y="298"> 14.  2017-04-18 03:48:41 +0000       28 bytes  dependent-build/depcheck-test-e2e/fake_modules/m\</tspan>
+<tspan x="10" y="314">issing/package.json</tspan>
+<tspan x="10" y="330"> 15.  2017-04-18 03:48:41 +0000       71 bytes  dependent-build/depcheck-test-e2e/fake_modules/u\</tspan>
+<tspan x="10" y="346">nused/index.js</tspan>
+<tspan x="10" y="362"> 16.  2017-04-18 03:48:41 +0000       54 bytes  dependent-build/depcheck-test-e2e/fake_modules/u\</tspan>
+<tspan x="10" y="378">nused/package.json</tspan>
+<tspan x="10" y="394"> 17.  2017-04-18 03:48:41 +0000      455 bytes  dependent-build/depcheck-test-e2e/package.json</tspan>
+<tspan x="10" y="410"> 18.  2017-04-18 03:48:41 +0000   121744 bytes  dependent-build/depcheck-test-e2e/yarn.lock</tspan>
+<tspan x="10" y="426"> 19.  2017-04-18 03:48:41 +0000     9982 bytes  dist/check.js</tspan>
+<tspan x="10" y="442"> 20.  2017-04-18 03:48:41 +0000     4813 bytes  dist/cli.js</tspan>
+<tspan x="10" y="458"> 21.  2017-04-18 03:48:41 +0000      358 bytes  dist/component.json</tspan>
+<tspan x="10" y="474"> 22.  2017-04-18 03:48:41 +0000     1861 bytes  dist/constants.js</tspan>
+<tspan x="10" y="490"> 23.  2017-04-18 03:48:41 +0000      404 bytes  dist/detector/gruntLoadTaskCallExpression.js</tspan>
+<tspan x="10" y="506"> 24.  2017-04-18 03:48:41 +0000      309 bytes  dist/detector/importDeclaration.js</tspan>
+<tspan x="10" y="522"> 25.  2017-04-18 03:48:41 +0000      626 bytes  dist/detector/requireCallExpression.js</tspan>
+<tspan x="10" y="538"> 26.  2017-04-18 03:48:41 +0000     3462 bytes  dist/index.js</tspan>
+<tspan x="10" y="554"> 27.  2017-04-18 03:48:41 +0000      481 bytes  dist/parser/coffee.js</tspan>
+<tspan x="10" y="570"> 28.  2017-04-18 03:48:41 +0000      283 bytes  dist/parser/es6.js</tspan>
+<tspan x="10" y="586"> 29.  2017-04-18 03:48:41 +0000      427 bytes  dist/parser/es7.js</tspan>
+<tspan x="10" y="602"> 30.  2017-04-18 03:48:41 +0000      422 bytes  dist/parser/jsx.js</tspan>
+<tspan x="10" y="618"> 31.  2017-04-18 03:48:41 +0000     1345 bytes  dist/parser/sass.js</tspan>
+<tspan x="10" y="634"> 32.  2017-04-18 03:48:41 +0000      852 bytes  dist/parser/typescript.js</tspan>
+<tspan x="10" y="650"> 33.  2017-04-18 03:48:41 +0000     3365 bytes  dist/special/babel.js</tspan>
+<tspan x="10" y="666"> 34.  2017-04-18 03:48:41 +0000     2576 bytes  dist/special/bin.js</tspan>
+<tspan x="10" y="682"> 35.  2017-04-18 03:48:41 +0000     1415 bytes  dist/special/commitizen.js</tspan>
+<tspan x="10" y="698"> 36.  2017-04-18 03:48:41 +0000     3876 bytes  dist/special/eslint.js</tspan>
+<tspan x="10" y="714"> 37.  2017-04-18 03:48:41 +0000      775 bytes  dist/special/feross-standard.js</tspan>
+<tspan x="10" y="730"> 38.  2017-04-18 03:48:41 +0000     6721 bytes  dist/special/gulp-load-plugins.js</tspan>
+<tspan x="10" y="746"> 39.  2017-04-18 03:48:41 +0000     2047 bytes  dist/special/mocha.js</tspan>
+<tspan x="10" y="762"> 40.  2017-04-18 03:48:41 +0000     1853 bytes  dist/special/webpack.js</tspan>
+<tspan x="10" y="778"> 41.  2017-04-18 03:48:41 +0000     2155 bytes  dist/utils/get-scripts.js</tspan>
+<tspan x="10" y="794"> 42.  2017-04-18 03:48:41 +0000     1019 bytes  dist/utils/index.js</tspan>
+<tspan x="10" y="810"> 43.  2017-04-18 03:48:41 +0000      541 bytes  false-alert.js</tspan>
+<tspan x="10" y="826"> 44.  2017-04-18 03:48:41 +0000     4754 bytes  package.json</tspan>
 </text>
 </svg>
