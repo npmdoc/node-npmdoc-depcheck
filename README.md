@@ -1,9 +1,14 @@
-# api documentation for  [depcheck (v0.6.7)](https://github.com/depcheck/depcheck#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-depcheck.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-depcheck) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-depcheck.svg)](https://travis-ci.org/npmdoc/node-npmdoc-depcheck)
+# npmdoc-depcheck
+
+#### api documentation for  [depcheck (v0.6.7)](https://github.com/depcheck/depcheck#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-depcheck.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-depcheck) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-depcheck.svg)](https://travis-ci.org/npmdoc/node-npmdoc-depcheck)
+
 #### Check dependencies in your node module
 
-[![NPM](https://nodei.co/npm/depcheck.png?downloads=true)](https://www.npmjs.com/package/depcheck)
+[![NPM](https://nodei.co/npm/depcheck.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/depcheck)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-depcheck/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-depcheck_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-depcheck/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-depcheck/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-depcheck/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-depcheck/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-depcheck/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-depcheck/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Djordje Lukic",
-        "email": "lukic.djordje@gmail.com"
+        "name": "Djordje Lukic"
     },
     "bin": {
         "depcheck": "bin/depcheck"
@@ -28,8 +32,7 @@
     },
     "contributors": [
         {
-            "name": "Junle Li",
-            "email": "lijunle@gmail.com"
+            "name": "Junle Li"
         }
     ],
     "dependencies": {
@@ -98,12 +101,10 @@
     "main": "dist/index.js",
     "maintainers": [
         {
-            "name": "lijunle",
-            "email": "lijunle@gmail.com"
+            "name": "lijunle"
         },
         {
-            "name": "rumpl",
-            "email": "lukic.djordje@gmail.com"
+            "name": "rumpl"
         }
     ],
     "name": "depcheck",
@@ -124,7 +125,6 @@
         ]
     },
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/depcheck/depcheck.git"
@@ -143,409 +143,6 @@
     },
     "version": "0.6.7"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module depcheck](#apidoc.module.depcheck)
-1.  object <span class="apidocSignatureSpan">depcheck.</span>detector
-1.  object <span class="apidocSignatureSpan">depcheck.</span>parser
-1.  object <span class="apidocSignatureSpan">depcheck.</span>special
-
-#### [module depcheck.detector](#apidoc.module.depcheck.detector)
-1.  [function <span class="apidocSignatureSpan">depcheck.detector.</span>gruntLoadTaskCallExpression (node)](#apidoc.element.depcheck.detector.gruntLoadTaskCallExpression)
-1.  [function <span class="apidocSignatureSpan">depcheck.detector.</span>importDeclaration (node)](#apidoc.element.depcheck.detector.importDeclaration)
-1.  [function <span class="apidocSignatureSpan">depcheck.detector.</span>requireCallExpression (node)](#apidoc.element.depcheck.detector.requireCallExpression)
-
-#### [module depcheck.parser](#apidoc.module.depcheck.parser)
-1.  [function <span class="apidocSignatureSpan">depcheck.parser.</span>coffee (content)](#apidoc.element.depcheck.parser.coffee)
-1.  [function <span class="apidocSignatureSpan">depcheck.parser.</span>es6 (content)](#apidoc.element.depcheck.parser.es6)
-1.  [function <span class="apidocSignatureSpan">depcheck.parser.</span>es7 (content)](#apidoc.element.depcheck.parser.es7)
-1.  [function <span class="apidocSignatureSpan">depcheck.parser.</span>jsx (content)](#apidoc.element.depcheck.parser.jsx)
-1.  [function <span class="apidocSignatureSpan">depcheck.parser.</span>sass (content, filePath, deps, rootDir)](#apidoc.element.depcheck.parser.sass)
-1.  [function <span class="apidocSignatureSpan">depcheck.parser.</span>typescript (content, filePath)](#apidoc.element.depcheck.parser.typescript)
-
-#### [module depcheck.special](#apidoc.module.depcheck.special)
-1.  [function <span class="apidocSignatureSpan">depcheck.special.</span>babel (content, filePath, deps)](#apidoc.element.depcheck.special.babel)
-1.  [function <span class="apidocSignatureSpan">depcheck.special.</span>bin (content, filepath, deps, dir)](#apidoc.element.depcheck.special.bin)
-1.  [function <span class="apidocSignatureSpan">depcheck.special.</span>commitizen (content, filePath, deps, rootDir)](#apidoc.element.depcheck.special.commitizen)
-1.  [function <span class="apidocSignatureSpan">depcheck.special.</span>eslint (content, filename, deps, rootDir)](#apidoc.element.depcheck.special.eslint)
-1.  [function <span class="apidocSignatureSpan">depcheck.special.</span>feross-standard (content, filePath, deps, rootDir)](#apidoc.element.depcheck.special.feross-standard)
-1.  [function <span class="apidocSignatureSpan">depcheck.special.</span>gulp-load-plugins (content, filePath, deps, rootDir)](#apidoc.element.depcheck.special.gulp-load-plugins)
-1.  [function <span class="apidocSignatureSpan">depcheck.special.</span>mocha (content, filepath, deps, rootDir)](#apidoc.element.depcheck.special.mocha)
-1.  [function <span class="apidocSignatureSpan">depcheck.special.</span>webpack (content, filepath, deps)](#apidoc.element.depcheck.special.webpack)
-
-
-
-# <a name="apidoc.module.depcheck"></a>[module depcheck](#apidoc.module.depcheck)
-
-
-
-# <a name="apidoc.module.depcheck.detector"></a>[module depcheck.detector](#apidoc.module.depcheck.detector)
-
-#### <a name="apidoc.element.depcheck.detector.gruntLoadTaskCallExpression"></a>[function <span class="apidocSignatureSpan">depcheck.detector.</span>gruntLoadTaskCallExpression (node)](#apidoc.element.depcheck.detector.gruntLoadTaskCallExpression)
-- description and source-code
-```javascript
-function detectGruntLoadTaskCallExpression(node) {
-  return node.type === 'CallExpression' && node.callee && node.callee.property && node.callee.property.name === 'loadNpmTasks' &&
-node.arguments[0] ? [node.arguments[0].value] : [];
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.depcheck.detector.importDeclaration"></a>[function <span class="apidocSignatureSpan">depcheck.detector.</span>importDeclaration (node)](#apidoc.element.depcheck.detector.importDeclaration)
-- description and source-code
-```javascript
-function detectImportDeclaration(node) {
-  return node.type === 'ImportDeclaration' && node.source && node.source.value ? [node.source.value] : [];
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.depcheck.detector.requireCallExpression"></a>[function <span class="apidocSignatureSpan">depcheck.detector.</span>requireCallExpression (node)](#apidoc.element.depcheck.detector.requireCallExpression)
-- description and source-code
-```javascript
-function detectRequireCallExpression(node) {
-  return node.type === 'CallExpression' && node.callee && node.callee.type === 'Identifier' && node.callee.name === 'require' &&
-node.arguments[0] && _lodash2.default.isString(node.arguments[0].value) ? [node.arguments[0].value] : [];
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.depcheck.parser"></a>[module depcheck.parser](#apidoc.module.depcheck.parser)
-
-#### <a name="apidoc.element.depcheck.parser.coffee"></a>[function <span class="apidocSignatureSpan">depcheck.parser.</span>coffee (content)](#apidoc.element.depcheck.parser.coffee)
-- description and source-code
-```javascript
-function parseCoffeeScript(content) {
-  return re.getDependencies(content);
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.depcheck.parser.es6"></a>[function <span class="apidocSignatureSpan">depcheck.parser.</span>es6 (content)](#apidoc.element.depcheck.parser.es6)
-- description and source-code
-```javascript
-function parseES6(content) {
-  return (0, _babylon.parse)(content, {
-    sourceType: 'module'
-  });
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.depcheck.parser.es7"></a>[function <span class="apidocSignatureSpan">depcheck.parser.</span>es7 (content)](#apidoc.element.depcheck.parser.es7)
-- description and source-code
-```javascript
-function parseES7(content) {
-  return (0, _babylon.parse)(content, {
-    sourceType: 'module',
-
-    // Enable all possible babylon plugins.
-    // Because we only parse them, not evaluate any code, it is safe to do so.
-    plugins: ['*']
-  });
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.depcheck.parser.jsx"></a>[function <span class="apidocSignatureSpan">depcheck.parser.</span>jsx (content)](#apidoc.element.depcheck.parser.jsx)
-- description and source-code
-```javascript
-function parseJSX(content) {
-  return (0, _babylon.parse)(content, {
-    sourceType: 'module',
-
-    // Enable all possible babylon plugins.
-    // Because the guys using React always want the newest syntax.
-    plugins: ['*', 'jsx']
-  });
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.depcheck.parser.sass"></a>[function <span class="apidocSignatureSpan">depcheck.parser.</span>sass (content, filePath, deps, rootDir)](#apidoc.element.depcheck.parser.sass)
-- description and source-code
-```javascript
-function parseSASS(content, filePath, deps, rootDir) {
-  var _sass$renderSync = sass.renderSync({
-    data: content,
-    includePaths: [_path2.default.dirname(filePath)]
-  }),
-      stats = _sass$renderSync.stats;
-
-  var result = (0, _lodash2.default)(stats.includedFiles).map(function (file) {
-    return _path2.default.relative(rootDir, file);
-  }).filter(function (file) {
-    return file.indexOf('node_modules') === 0;
-  }) // refer to node_modules
-  .map(function (file) {
-    return file.replace(/\\/g, '/');
-  }) // normalize paths in Windows
-  .map(function (file) {
-    return file.substring('node_modules/'.length);
-  }) // avoid heading slash
-  .map(_requirePackageName2.default).uniq().value();
-
-  return result;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.depcheck.parser.typescript"></a>[function <span class="apidocSignatureSpan">depcheck.parser.</span>typescript (content, filePath)](#apidoc.element.depcheck.parser.typescript)
-- description and source-code
-```javascript
-function parseTypescript(content, filePath) {
-  if (!typescript) {
-    return [];
-  }
-
-  var compileOptions = {
-    module: typescript.ModuleKind.CommonJS,
-    target: typescript.ScriptTarget.Latest
-  };
-
-  var result = typescript.transpile(content, compileOptions, filePath);
-
-  // TODO avoid parse source file twice, use Typescript native traverser to find out dependencies.
-  // Reference: https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API#traversing-the-ast-with-a-little-linter
-  return (0, _babylon.parse)(result, {
-    sourceType: 'module'
-  });
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.depcheck.special"></a>[module depcheck.special](#apidoc.module.depcheck.special)
-
-#### <a name="apidoc.element.depcheck.special.babel"></a>[function <span class="apidocSignatureSpan">depcheck.special.</span>babel (content, filePath, deps)](#apidoc.element.depcheck.special.babel)
-- description and source-code
-```javascript
-function parseBabel(content, filePath, deps) {
-  var filename = _path2.default.basename(filePath);
-
-  if (filename === '.babelrc') {
-    var options = parse(content);
-    return checkOptions(deps, options);
-  }
-
-  if (filename === 'package.json') {
-    var metadata = parse(content);
-    return checkOptions(deps, metadata.babel);
-  }
-
-  return [];
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.depcheck.special.bin"></a>[function <span class="apidocSignatureSpan">depcheck.special.</span>bin (content, filepath, deps, dir)](#apidoc.element.depcheck.special.bin)
-- description and source-code
-```javascript
-function parseBinary(content, filepath, deps, dir) {
-  var scripts = (0, _utils.getScripts)(filepath, content);
-  return deps.filter(function (dep) {
-    return isBinaryInUse(dep, scripts, dir);
-  });
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.depcheck.special.commitizen"></a>[function <span class="apidocSignatureSpan">depcheck.special.</span>commitizen (content, filePath, deps, rootDir)](#apidoc.element.depcheck.special.commitizen)
-- description and source-code
-```javascript
-function parseCommitizen(content, filePath, deps, rootDir) {
-  var packageJsonPath = _path2.default.resolve(rootDir, 'package.json');
-  var resolvedFilePath = _path2.default.resolve(filePath);
-
-  if (resolvedFilePath === packageJsonPath) {
-    var metadata = JSON.parse(content);
-
-    if (metadata.config && metadata.config.commitizen && metadata.config.commitizen.path) {
-      var commitizenPath = metadata.config.commitizen.path;
-
-      if (!commitizenPath.startsWith('.')) {
-        return [(0, _requirePackageName2.default)(commitizenPath)];
-      }
-
-      var normalizedPath = _path2.default.normalize(commitizenPath).replace(/\\/g, '/');
-
-      if (!normalizedPath.startsWith('node_modules')) {
-        // The path is not refering to a file in another module
-        return [];
-      }
-
-      var packagePath = normalizedPath.substring('node_modules/'.length);
-
-      return [(0, _requirePackageName2.default)(packagePath)];
-    }
-  }
-
-  return [];
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.depcheck.special.eslint"></a>[function <span class="apidocSignatureSpan">depcheck.special.</span>eslint (content, filename, deps, rootDir)](#apidoc.element.depcheck.special.eslint)
-- description and source-code
-```javascript
-function parseESLint(content, filename, deps, rootDir) {
-  var basename = _path2.default.basename(filename);
-  if (/^\.eslintrc(\.json|\.js|\.yml|\.yaml)?$/.test(basename)) {
-    var config = parse(content);
-    return checkConfig(config, rootDir);
-  }
-
-  return [];
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.depcheck.special.feross-standard"></a>[function <span class="apidocSignatureSpan">depcheck.special.</span>feross-standard (content, filePath, deps, rootDir)](#apidoc.element.depcheck.special.feross-standard)
-- description and source-code
-```javascript
-function parseFerossStandard(content, filePath, deps, rootDir) {
-  var packageJsonPath = _path2.default.resolve(rootDir, 'package.json');
-  var resolvedFilePath = _path2.default.resolve(filePath);
-  if (resolvedFilePath === packageJsonPath && deps.indexOf('standard') !== -1) {
-    var metadata = JSON.parse(content);
-    var config = metadata.standard || {};
-    var parser = config.parser;
-    return parser ? [parser] : [];
-  }
-
-  return [];
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.depcheck.special.gulp-load-plugins"></a>[function <span class="apidocSignatureSpan">depcheck.special.</span>gulp-load-plugins (content, filePath, deps, rootDir)](#apidoc.element.depcheck.special.gulp-load-plugins)
-- description and source-code
-```javascript
-function parseGulpPlugins(content, filePath, deps, rootDir) {
-  var resolvedPath = (0, _path.resolve)(filePath);
-  if (resolvedPath !== (0, _path.resolve)(rootDir, 'gulpfile.js') && resolvedPath !== (0, _path.resolve)(rootDir, 'gulpfile.babel
-.js')) {
-    return [];
-  }
-
-  var pluginLookup = getPluginLookup(deps);
-  var ast = (0, _es2.default)(content);
-  var results = [];
-  (0, _babelTraverse2.default)(ast, {
-    enter: function enter(path) {
-      results.push.apply(results, _toConsumableArray(check(content, pluginLookup, path)));
-    }
-  });
-
-  return (0, _lodash2.default)(results).filter().uniq().value();
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.depcheck.special.mocha"></a>[function <span class="apidocSignatureSpan">depcheck.special.</span>mocha (content, filepath, deps, rootDir)](#apidoc.element.depcheck.special.mocha)
-- description and source-code
-```javascript
-function parseMocha(content, filepath, deps, rootDir) {
-  var defaultOptPath = _path2.default.resolve(rootDir, 'test/mocha.opts');
-  if (filepath === defaultOptPath) {
-    return getRequires(content, deps);
-  }
-
-  // get mocha.opts from scripts
-  var requires = (0, _lodash2.default)((0, _utils.getScripts)(filepath, content)).filter(function (script) {
-    return script.indexOf('mocha') !== -1;
-  }).map(function (script) {
-    return getOpts(script);
-  }).filter(function (opts) {
-    return opts;
-  }).map(function (opts) {
-    return _path2.default.resolve(filepath, '..', opts);
-  }).map(function (optPath) {
-    return _fs2.default.readFileSync(optPath, 'utf-8');
-  }) // TODO async read file
-  .map(function (optContent) {
-    return getRequires(optContent, deps);
-  }).flatten().value();
-
-  return requires;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.depcheck.special.webpack"></a>[function <span class="apidocSignatureSpan">depcheck.special.</span>webpack (content, filepath, deps)](#apidoc.element.depcheck.special.webpack)
-- description and source-code
-```javascript
-function parseWebpack(content, filepath, deps) {
-  var filename = _path2.default.basename(filepath);
-  if (webpackConfigRegex.test(filename)) {
-    var module = require(filepath).module || {}; // eslint-disable-line global-require
-    var loaders = getLoaders(deps, module.loaders);
-    var preLoaders = getLoaders(deps, module.preLoaders);
-    var postLoaders = getLoaders(deps, module.postLoaders);
-    return loaders.concat(preLoaders).concat(postLoaders);
-  }
-
-  return [];
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
