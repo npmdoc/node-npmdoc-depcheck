@@ -1,6 +1,6 @@
 # npmdoc-depcheck
 
-#### api documentation for  [depcheck (v0.6.7)](https://github.com/depcheck/depcheck#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-depcheck.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-depcheck) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-depcheck.svg)](https://travis-ci.org/npmdoc/node-npmdoc-depcheck)
+#### basic api documentation for  [depcheck (v0.6.7)](https://github.com/depcheck/depcheck#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-depcheck.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-depcheck) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-depcheck.svg)](https://travis-ci.org/npmdoc/node-npmdoc-depcheck)
 
 #### Check dependencies in your node module
 
